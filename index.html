@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Explorer</h1>
+    <form id="search-form">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for a movie..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main id="movies-container"></main>
+
+  <template id="movie-card-template">
+    <article class="movie-card">
+      <img src="" class="movie-poster" alt="Movie Poster" />
+      <h2 class="movie-title"></h2>
+      <p class="movie-info"></p>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
